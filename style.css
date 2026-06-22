@@ -483,5 +483,6 @@ body{
 
     .login-card{
         width:100%;
+               margin: 33px;
     }
 }
