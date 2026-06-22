@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment Result</title>
+
+<link rel="stylesheet" href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <div class="result-card">
+
+        <div class="result-header">
+
+            <div class="success-icon">
+                🎉
+            </div>
+
+            <h1>Assessment Completed</h1>
+
+            <p>
+                Congratulations! Your test has been submitted successfully.
+            </p>
+
+        </div>
+
+        <div class="candidate-card">
+
+            <h2 id="candidate"></h2>
+
+        </div>
+
+        <div class="result-grid">
+
+            <div class="result-box">
+
+                <h2 id="score"></h2>
+
+                <p>Score</p>
+
+            </div>
+
+            <div class="result-box">
+
+                <h2 id="attempted"></h2>
+
+                <p>Attempted</p>
+
+            </div>
+
+            <div class="result-box">
+
+                <h2 id="percentage"></h2>
+
+                <p>Percentage</p>
+
+            </div>
+
+            <div class="result-box">
+
+                <h2 id="status"></h2>
+
+                <p>Status</p>
+
+            </div>
+
+        </div>
+
+        <div class="restart-area">
+
+            <button class="restart-btn"
+            onclick="restartQuiz()">
+
+                🔄 Take Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function restartQuiz(){
+
+    localStorage.removeItem("answers");
+    localStorage.removeItem("score");
+    localStorage.removeItem("attempted");
+
+    window.location.href="index.html";
+
+}
+
+</script>
+
+<script src="./result.js"></script>
+
+</body>
+</html>

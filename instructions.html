@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Instructions</title>
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<div class="instruction-container">
+
+<div class="instruction-card">
+
+<h1>Assessment Instructions</h1>
+
+<h3 id="welcomeUser"></h3>
+
+<div class="exam-info">
+
+<div class="info-box">
+<h2>10</h2>
+<p>Questions</p>
+</div>
+
+<div class="info-box">
+<h2>10 Min</h2>
+<p>Duration</p>
+</div>
+
+<div class="info-box">
+<h2>10</h2>
+<p>Marks</p>
+</div>
+
+</div>
+
+<ul>
+
+<li>Each question carries 1 mark.</li>
+
+<li>No negative marking.</li>
+
+<li>You can navigate using palette.</li>
+
+<li>Review questions anytime.</li>
+
+<li>Timer auto submits test.</li>
+
+<li>Do not refresh browser.</li>
+
+<li>Read every question carefully.</li>
+
+</ul>
+
+<button class="start-btn"
+onclick="startExam()">
+
+Start Test
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("welcomeUser")
+.innerHTML =
+"Welcome : " +
+localStorage.getItem("candidateName");
+
+function startExam(){
+
+localStorage.removeItem("answers");
+localStorage.removeItem("score");
+localStorage.removeItem("attempted");
+
+window.location.href = "test.html";
+
+}
+
+</script>
+
+</body>
+</html>

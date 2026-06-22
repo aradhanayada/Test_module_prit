@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assessment Test</title>
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<header class="exam-header">
+
+<div>
+<h2>PRIT Online Assessment</h2>
+<p id="candidateName"></p>
+</div>
+
+<div class="timer">
+⏳ <span id="timer">10:00</span>
+</div>
+
+</header>
+
+<div class="exam-container">
+
+<div class="left-panel">
+
+<h3 id="candidateName"></h3>
+
+<div class="question-card">
+
+<h3 id="questionCount"></h3>
+
+<h2 id="questionText"></h2>
+
+<div id="optionsContainer"></div>
+
+</div>
+
+<div class="btn-group">
+
+<button class="btn prev-btn"
+id="prevBtn">
+
+Previous
+
+</button>
+
+<button class="btn review-btn"
+id="reviewBtn">
+
+Review
+
+</button>
+
+<button class="btn next-btn"
+id="nextBtn">
+
+Save & Next
+
+</button>
+
+<button class="btn submit-btn"
+id="submitBtn">
+
+Submit
+
+</button>
+
+</div>
+
+</div>
+
+<div class="right-panel">
+
+<h3>Question Palette</h3>
+
+<div class="palette"
+id="palette">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="./questions.js"></script>
+<script src="./test.js"></script>
+
+</body>
+</html>
